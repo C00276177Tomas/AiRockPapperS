@@ -18,12 +18,12 @@ import { ref } from 'vue'
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: #8b8bd4;
+  background-color: #2a2ac5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  z-index: 1000;
+  z-index: 99;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
