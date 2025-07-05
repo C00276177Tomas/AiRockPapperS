@@ -5,7 +5,20 @@ import { ref } from 'vue'
 <template>
   <header class="navbar">
     <div class="navbar-left">
-      <a href="#" class="nav-button">About Me</a>
+      <div class="nav-button">
+        About Me
+        <span class="tooltip">
+          <p>My name is Tomas Smitas, a Full Stack Developer and Data Science Enthusiast.</p>
+          <p>Feel free to contact me with any of the links provided.</p>
+          <p><a href="https://c00276177tomas.github.io/MachineLearningPortfolio/" target="_blank">Visit My Website</a></p>
+        </span>
+      </div>
+      <a href="https://www.linkedin.com/in/tomassmitas/" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <img src="/linkedIn.png" alt="LinkedIn" class="nav-icon-linkedin" />
+      </a>
+      <a href="https://github.com/C00276177Tomas" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <img src="/githubCropped.png" alt="LinkedIn" class="nav-icon-github" />
+      </a>
     </div>
 
     <div class="navbar-center">
@@ -51,21 +64,6 @@ import { ref } from 'vue'
   justify-content: flex-end;
 }
 
-.nav-button {
-  padding: 0.5rem 1rem;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button:hover {
-  background-color: white;
-  color: #C79746; /* matches your navbar gold */
-}
-
 .title {
   font-size: 2rem;          /* make it big */
   font-weight: bold;
@@ -73,5 +71,72 @@ import { ref } from 'vue'
   letter-spacing: 1px;
   margin: 0;                /* remove default margin */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* optional for depth */
+}
+
+.nav-icon-linkedin {
+  height: 48px;
+  width: 48px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.nav-icon-github {
+  height: 48px;
+  width: 48px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-button {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #C79746; /* matches your navbar gold */
+}
+
+/* Initially hide tooltip */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-9.5%);
+  top: 100%; /* right under the button */
+  white-space: nowrap;
+
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* so it doesn’t block hover when hidden */
+  z-index: 10;
+}
+
+/* Show tooltip when hovering the button or the tooltip */
+.nav-button:hover .tooltip,
+.nav-button .tooltip:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltip p {
+  margin: 0.5rem 0;
 }
 </style>
