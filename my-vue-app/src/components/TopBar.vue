@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 </script>
 
 <template>
@@ -8,15 +8,34 @@ import { ref } from 'vue'
       <div class="nav-button">
         About Me
         <span class="tooltip">
-          <p>My name is Tomas Smitas, a Full Stack Developer and Data Science Enthusiast.</p>
+          <p>
+            My name is Tomas Smitas, a Full Stack Developer and Data Science
+            Enthusiast.
+          </p>
           <p>Feel free to contact me with any of the links provided.</p>
-          <p><a href="https://c00276177tomas.github.io/MachineLearningPortfolio/" target="_blank">Visit My Website</a></p>
+          <p>
+            <a
+              href="https://c00276177tomas.github.io/MachineLearningPortfolio/"
+              target="_blank"
+              >Visit My Website</a
+            >
+          </p>
         </span>
       </div>
-      <a href="https://www.linkedin.com/in/tomassmitas/" target="_blank" rel="noopener noreferrer" class="icon-link">
+      <a
+        href="https://www.linkedin.com/in/tomassmitas/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon-link"
+      >
         <img src="/linkedIn.png" alt="LinkedIn" class="nav-icon-linkedin" />
       </a>
-      <a href="https://github.com/C00276177Tomas" target="_blank" rel="noopener noreferrer" class="icon-link">
+      <a
+        href="https://github.com/C00276177Tomas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon-link"
+      >
         <img src="/githubCropped.png" alt="LinkedIn" class="nav-icon-github" />
       </a>
     </div>
@@ -28,14 +47,14 @@ import { ref } from 'vue'
     <div class="navbar-right">
       <a href="#">Login</a>
     </div>
-    </header>
+  </header>
 </template>
 
 <style scoped>
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: #C79746;
+  background-color: #c79746;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,11 +84,11 @@ import { ref } from 'vue'
 }
 
 .title {
-  font-size: 2rem;          /* make it big */
+  font-size: 2rem; /* make it big */
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
-  margin: 0;                /* remove default margin */
+  margin: 0; /* remove default margin */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* optional for depth */
 }
 
@@ -103,7 +122,7 @@ a {
 
 .nav-button:hover {
   background-color: white;
-  color: #C79746; /* matches your navbar gold */
+  color: #c79746; /* matches your navbar gold */
 }
 
 /* Initially hide tooltip */
