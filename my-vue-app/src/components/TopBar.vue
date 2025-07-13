@@ -45,7 +45,7 @@ import { ref } from "vue";
     </div>
 
     <div class="navbar-right">
-      <a href="#">Login</a>
+      <div class="nav-button">Project Description</div>
     </div>
   </header>
 </template>
@@ -110,19 +110,7 @@ a {
 }
 
 .nav-button {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: 2px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.nav-button:hover {
-  background-color: white;
-  color: #c79746; /* matches your navbar gold */
+  margin: 0;
 }
 
 /* Initially hide tooltip */
