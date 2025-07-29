@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
 
 # Train the model on the COCO8 example dataset for 100 epochs
-results = model.train(data="MyRockPapperSv2/data.yaml", epochs=10, imgsz=640, batch=4)
+results = model.train(data="MyRockPapperSv3/data.yaml", epochs=50, imgsz=640)
 
 
 
