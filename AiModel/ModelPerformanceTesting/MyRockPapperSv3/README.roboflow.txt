@@ -1,8 +1,8 @@
 
-MyRockPapperS - v3 2025-07-29 6:47am
+MyRockPapperS - v4 2025-07-30 9:32pm
 ==============================
 
-This dataset was exported via roboflow.com on July 29, 2025 at 5:48 AM GMT
+This dataset was exported via roboflow.com on July 30, 2025 at 8:33 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 157 images.
+The dataset includes 328 images.
 Rock-papper-scissors are annotated in YOLOv11 format.
 
 The following pre-processing was applied to each image:
