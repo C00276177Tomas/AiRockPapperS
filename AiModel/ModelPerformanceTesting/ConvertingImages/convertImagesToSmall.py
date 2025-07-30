@@ -1,12 +1,12 @@
 import os
 from PIL import Image
 
-input_dir = "RockPapperS"
-output_dir = "MyDataset"
+input_dir = "RockPapperS2"
+output_dir = "RockPapperS2Converted"
 os.makedirs(output_dir, exist_ok=True)
 
-target_size = 600
-quality = 80
+target_size = 640
+quality = 95
 
 for filename in os.listdir(input_dir):
     if filename.lower().endswith(('.jpg', '.jpeg', '.png', '.heic')):
@@ -39,7 +39,7 @@ for filename in os.listdir(input_dir):
                 img = img.crop((left, top, right, bottom))
 
                 # Step 3: save
-                img.save(output_path, "JPEG", quality=quality, optimize=True)
+                img.save(output_path, "JPEG", quality=quality)
 
                 print(f"Processed: {filename} -> {output_filename}")
 
