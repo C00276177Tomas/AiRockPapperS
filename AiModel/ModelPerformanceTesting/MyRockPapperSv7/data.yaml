@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['papper', 'rock', 'scissors']
+
+roboflow:
+  workspace: sitesafeai
+  project: myrockpappers-cjuw1
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sitesafeai/myrockpappers-cjuw1/dataset/7
