@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load your trained model (adjust the path if different)
-model = YOLO("best (3).pt")
+model = YOLO("best (4).pt")
 
 # Open the webcam (0 = default camera; change if you have multiple)
 cap = cv2.VideoCapture(0)
@@ -19,7 +19,7 @@ while True:
         break
 
     # Run YOLO prediction on the frame
-    results = model.predict(source=frame, conf=0.5, show=False, stream=True)
+    results = model.predict(source=frame, conf=0.4, show=False, stream=True)
 
     # results is a generator; we loop through it
     for r in results:
